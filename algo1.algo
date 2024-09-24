@@ -1,0 +1,43 @@
+
+// longueur de la phrase
+ALGORITHM longueurphrase
+VAR
+  nbr_caract : INTEGER
+  c : STRING
+BEGIN
+  nbr_caract = 0
+  WHILE (c != '.') DO
+    afficher un caractere
+    IF (c == '.') THEN
+      nbr_caract += 1
+    END_IF
+  END_WHILE
+  afficher "longueur de la phrase"
+END
+
+// le nombre de mots dans la phrase
+ALGORITHM nombremots
+VAR
+  nbr_mot : INTEGER
+BEGIN
+  nbr_mot = 0
+  IF (mot !=,"") THEN
+    nbr_mot += 1
+  END_IF
+  afficher "le nombre de mots"
+END
+
+// Le nombre de voyelles dans la phrase.
+ALGORITHM nombrevoyelles
+VAR
+  nbr-voy : INTEGER
+  i : INTEGER
+BEGIN
+  nbr-voy = 0
+  FOR(i=0; i<=text.length; i++)
+    IF text[i]='a' || text[i]='e' || text[i]='i' || text[i]='o' || text[i]='u' || text[i]='y' THEN
+    nbr_voy += 1
+    END_IF
+  END_FOR
+  afficher nbr_voy
+END
